@@ -67,29 +67,35 @@ This command will list all the files in that directory including hidden files.
 
 ```
 cd/
-``` - Takes you to the root directory.
+```
+- Takes you to the root directory.
 
 ```
 cd ..
-``` - Takes you up on directory level.
+``` 
+- Takes you up on directory level.
 
 ```
 cd -
-``` - Takes you to the previous directory.
+``` 
+- Takes you to the previous directory.
 
 Examples:
 
 ```
 cd /home/User/Dev
-``` - This will take me to the Folder Dev in the directory.
+``` 
+- This will take me to the Folder Dev in the directory.
 
 ```
 cd /home/User/Dev/JS\ Practice\ Folder
-``` - This will take me to the JS Practice Folder. **Note I used backslah+space. This does the same as** 
+``` 
+- This will take me to the JS Practice Folder. **Note I used backslah+space. This does the same as** 
 
 ```
 cd /home/User/Dev/"JS Practice Folder"
-``` - I used "" instead of the backslah+space.
+``` 
+- I used "" instead of the backslah+space.
 
 ## pwd
 
@@ -121,7 +127,8 @@ cp "JS Practice Folder" /home/User/Dev/JS
 
 ```
 mv pyproject.py /home/User/Dev/Python_Project
-``` - This will move the pyproject.py file in my current directory to the Python_Project folder in the directory.
+``` 
+- This will move the pyproject.py file in my current directory to the Python_Project folder in the directory.
 
 ## rm
 
