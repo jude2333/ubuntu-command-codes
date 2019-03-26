@@ -1,6 +1,9 @@
 # Basic Ubuntu Commands
 
+This is a list of the most basic but extremely useful commands. Learning these will help you have a strong foundation to add more sophisticated commands upon.
+
 ## Sudo
+
 sudo (Superuser DO) This is the same as Run as administor
 
 ```
@@ -8,36 +11,37 @@ sudo
 ```
 
 ## apt-get
+
 This command is used to install, update, upgrade, and remove any package. Examples below will show how to use in different ways:
 
-* **sudo apt-get update**
-    
-    superuser privileges. This command updates your system along with the packages that are installed.
+- **sudo apt-get update**
 
-    ```
-    sudo apt-get update
-    ```
+  superuser privileges. This command updates your system along with the packages that are installed.
 
-* **sudo apt-get upgrade**
+  ```
+  sudo apt-get update
+  ```
 
-    You will run this command after you ran
-    
-     ```
-     sudo apt-get upgrade
-     ```
+- **sudo apt-get upgrade**
 
-    This will upgrade the packages that have available updates. You can also upgrade just one package by adding a space along with the package name after upgrade.
+  You will run this command after you ran
 
-    ```
-    sudo apt-get upgrade node.js
-    ```
+  ```
+  sudo apt-get upgrade
+  ```
 
-* **sudo apt-get install _package-name you wish to install_  
+  This will upgrade the packages that have available updates. You can also upgrade just one package by adding a space along with the package name after upgrade.
+
+  ```
+  sudo apt-get upgrade node.js
+  ```
+
+- \*\*sudo apt-get install _package-name you wish to install_  
   You would replace the package-name with the name of the program you wish to install.
 
-    ```
-    sudo apt-get install curl
-    ```
+  ```
+  sudo apt-get install curl
+  ```
 
 ## ls
 
@@ -66,46 +70,52 @@ This command will list all the files in that directory including hidden files.
 (change director) used to change the current working directory. You use it by typing cd space then the folder name within the your current directory or full paths to the folder if in a different directory. Examples of different ways below:
 
 ```
-cd/
+cd
 ```
+
 - Takes you to the root directory.
 
 ```
 cd ..
-``` 
+```
+
 - Takes you up on directory level.
 
 ```
 cd -
-``` 
+```
+
 - Takes you to the previous directory.
 
 Examples:
 
 ```
 cd /home/User/Dev
-``` 
+```
+
 - This will take me to the Folder Dev in the directory.
 
 ```
 cd /home/User/Dev/JS\ Practice\ Folder
-``` 
-- This will take me to the JS Practice Folder. **Note I used backslah+space. This does the same as** 
+```
+
+- This will take me to the JS Practice Folder. **Note I used backslah+space. This does the same as**
 
 ```
 cd /home/User/Dev/"JS Practice Folder"
-``` 
+```
+
 - I used "" instead of the backslah+space.
 
 ## pwd
 
 (print working directory) This will display the full pathname of the working directory.
 
-Using the last example above - 
+Using the last example above -
 
 ```
 pwd
-```  
+```
 
 Returns:
 
@@ -127,7 +137,8 @@ cp "JS Practice Folder" /home/User/Dev/JS
 
 ```
 mv pyproject.py /home/User/Dev/Python_Project
-``` 
+```
+
 - This will move the pyproject.py file in my current directory to the Python_Project folder in the directory.
 
 ## rm
@@ -140,37 +151,38 @@ rm js_practice
 
 Here are some other uses of using rm:
 
-* **rmdir**
-    
-    (remove directory) - Removes an empty directory
+- **rmdir**
 
-    ```
-    rmdir /home/User/Dev/My_Empty_Folder
-    ```
+  (remove directory) - Removes an empty directory
 
-* **rm -r**
+  ```
+  rmdir /home/User/Dev/My_Empty_Folder
+  ```
 
-    (remove recursively) - Removes a dirctroy along with its content.
+- **rm -r**
 
-    ``` 
-    rm -r /home/User/Dev/No_Longer_Needed_Practice_Folder
-    ```
+  (remove recursively) - Removes a directroy along with its content.
 
-* **rm -f**
+  ```
+  rm -r /home/User/Dev/No_Longer_Needed_Practice_Folder
+  ```
 
-    (remove force)
-    This will forcefully remove files. To forcefully remove dirctorie use 
-    ```
-    rm -rf <fileName>
-    ```
+- **rm -f**
 
-* **rm -i**
+(remove force)
+This will forcefully remove files. To forcefully remove dirctorie use
 
-    This is use to be prompt before every removal.
+```
+rm -rf <fileName>
+```
 
-    ```
-    rm -i <fileName>
-    ```
+- **rm -i**
+
+This is use to be prompt before every removal.
+
+```
+rm -i <fileName>
+```
 
 ## mkdir
 
@@ -189,7 +201,7 @@ mkdir Learn_Terminal_Basic
 ## locate
 
 Helps you to find files and their location by their name. If you are not sure if the file name is upper case or lower case us -i to ignore the case.
-If you wish to locate two or more words at a time you can seprate each word with (*). Examples:
+If you wish to locate two or more words at a time you can seprate each word with (\*). Examples:
 
 ```
 locate -i *hello*his
@@ -259,4 +271,40 @@ or to cat in your current directory
 
 ```
 cat Basic.py
+```
+
+## man
+
+(manual) This command will give you a discription of any command that come after the command man. Example:
+
+```
+man install
+```
+
+## info
+
+(information) This command is a lot like man but the different is that info goes into more information about the command that follows info. Example:
+
+```
+info apt-get
+```
+
+## rename file or directory
+
+Ubuntu 18.04 does not have the command rename installed but can be installed using:
+
+```
+sudo install rename
+```
+
+But the Ubuntu community recommands using mv command. Let's say I have a file in my Dev directory I want to rename.
+
+```
+mv /home/jason/Dev/Terminal_Practice /home/jason/Dev/Basic_Terminal_Commands
+```
+
+Here is another way that was suggested but it is more complicated:
+
+```
+for file in <the file or dir you want to rename>; do mv $file ${file//<name of the file or dir you want to rename>/<the new name you want>}; done
 ```
