@@ -315,3 +315,25 @@ Here is another way that was suggested but it is more complicated:
 ```
 for file in <the file or dir you want to rename>; do mv $file ${file//<name of the file or dir you want to rename>/<the new name you want>}; done
 ```
+
+## Ubuntu Terminal Shortcuts
+
+| Shortcuts           | Functions                |
+| ------------------- | -----------------------: |
+| Ctrl + Shift + T    | Open new tab on the active terminal |
+| Ctrl + Shift + W    | Close the active tab                |
+| Ctrl + A            | Move cursor to beginning of the active line   |
+| Ctrl + E            | Move cursor to end of the active line         |
+| Ctrl + U            | Clears the entire active line                 |
+| Ctrl + K            | Clears the command from the cursor to the right |
+| Ctrl + W            | Delete the word before the cursor               |
+| Ctrl + R            | Searches your history for commands matching what you had typed |
+| Ctrl + C            | Kill the active process                                        |
+| Ctrl + Z            | Temporarily stops the active process by sending the signal SIGSTOP |
+| Ctrl + L            | Clears the terminal display                                        |
+| Alt + F             | Advances forward one word                                          |
+| Alt + B             | Goes back one word                                                 |
+| Ctrl + Shift + C    | Copy the highlighted characters to the clipboard                   |
+| Ctrl + Shift + V or Shift + Insert | Paste the contents of the clipboard to the active line  |
+| Up/Down Arrow Keys  | Scrolls through your command history, This can allow you to quickly execute your previous command multiple times |
+| TAB                 | Can complete the command you are typing. Can also be use to complete mulitple commands in a row.  |
