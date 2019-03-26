@@ -4,7 +4,7 @@ This is a list of the most basic but extremely useful commands. Learning these w
 
 ## Sudo
 
-sudo (Superuser DO) This is the same as Run as administor
+(Superuser DO) This is the same as "Run as administor"
 
 ```
 sudo
@@ -36,7 +36,7 @@ This command is used to install, update, upgrade, and remove any package. Exampl
   sudo apt-get upgrade node.js
   ```
 
-- \*\*sudo apt-get install _package-name you wish to install_  
+- **sudo apt-get install _package name you wish to install_**
   You would replace the package-name with the name of the program you wish to install.
 
   ```
@@ -45,13 +45,13 @@ This command is used to install, update, upgrade, and remove any package. Exampl
 
 ## ls
 
-ls (list) command will list out the files in the current working directory you are in.
+(list) command will list out the files in the current working directory you are in.
 
 ```
 ls
 ```
 
-You can also look at different files in other directories by adding a space then the direct path to the other directory you wish to look into following the ls.
+You can also look at different files in other directories by adding a space then the direct path to the other directory you wish to look into.
 
 ```
 ls /home/User/Dev
@@ -67,7 +67,7 @@ This command will list all the files in that directory including hidden files.
 
 ## cd
 
-(change director) used to change the current working directory. You use it by typing cd space then the folder name within the your current directory or full paths to the folder if in a different directory. Examples of different ways below:
+(change directory) used to change the current working directory. You use it by typing cd space then the file name within your current directory or full path to another directory and/or file if in a different directory. Examples of different ways below:
 
 ```
 cd
@@ -93,19 +93,19 @@ Examples:
 cd /home/User/Dev
 ```
 
-- This will take me to the Folder Dev in the directory.
+- This will take me to the directory Dev.
 
 ```
-cd /home/User/Dev/JS\ Practice\ Folder
+cd /home/User/Dev/JS\ Practice
 ```
 
-- This will take me to the JS Practice Folder. **Note I used backslah+space. This does the same as**
+- This will take me to the JS Practice. **Note I used backslash+space. This does the same as**
 
 ```
-cd /home/User/Dev/"JS Practice Folder"
+cd /home/User/Dev/"JS Practice"
 ```
 
-- I used "" instead of the backslah+space.
+- I used "" instead of the backslash+space.
 
 ## pwd
 
@@ -120,7 +120,7 @@ pwd
 Returns:
 
 ```
-/home/User/Dev"JS Practice Folder"
+/home/User/Dev"JS Practice"
 ```
 
 ## cp
@@ -133,17 +133,17 @@ cp "JS Practice Folder" /home/User/Dev/JS
 
 ## mv
 
-(move) A lot like cp (copy) but instead of copying the file you will move it from one folder to another folder in the directory. Just like cp (copy) after typing mv + space + the file you want to move + location to move it too.
+(move) A lot like cp (copy) but instead of copying the file you will move it from one folder to another folder in the directory. Just like cp (copy) after typing mv + space + the file you want to move + location to move it too. Example below:
 
 ```
 mv pyproject.py /home/User/Dev/Python_Project
 ```
 
-- This will move the pyproject.py file in my current directory to the Python_Project folder in the directory.
+- This will move the pyproject.py file in my current directory to the Python_Project directory.
 
 ## rm
 
-(remove) This command will remove the specified file but not the directory. This will delete if from the directory.
+(remove) This command will remove the specified file but not the directory.
 
 ```
 rm js_practice
@@ -161,7 +161,7 @@ Here are some other uses of using rm:
 
 - **rm -r**
 
-  (remove recursively) - Removes a directroy along with its content.
+  (remove recursively) - Removes a directory along with its content. This will remove a non-empty directory
 
   ```
   rm -r /home/User/Dev/No_Longer_Needed_Practice_Folder
@@ -170,7 +170,8 @@ Here are some other uses of using rm:
 - **rm -f**
 
 (remove force)
-This will forcefully remove files. To forcefully remove dirctorie use
+This will forcefully remove files.  
+But to forcefully remove non-empty dirctories use:
 
 ```
 rm -rf <fileName>
@@ -178,7 +179,7 @@ rm -rf <fileName>
 
 - **rm -i**
 
-This is use to be prompt before every removal.
+Using this will make remove prompt you before every removal.
 
 ```
 rm -i <fileName>
@@ -200,20 +201,27 @@ mkdir Learn_Terminal_Basic
 
 ## locate
 
-Helps you to find files and their location by their name. If you are not sure if the file name is upper case or lower case us -i to ignore the case.
-If you wish to locate two or more words at a time you can seprate each word with (\*). Examples:
+Use this command to find files and their location by their name. If you are not sure if the file name is upper case or lower case use -i to ignore the case.
+If you wish to locate two or more words at a time you can seprate each word with (*). Example below:
 
 ```
-locate -i *hello*his
+locate -i *hello*Practice
 ```
 
-If you just want to have a count of the times the word is in the directory you can use -c. Example:
+If you just want to have a count of the times the word is in the directories you can use -c. Example:
 
 ```
-locate -i -c Python
+locate -c Python
 ```
 
-This would return a number of how many time the word Python in being used in the directory.
+This would return a number of how many times the word Python is in the directories.
+
+or you could do this:
+
+```
+locate -ic Python
+```
+This will ignore the case and return a count for how many times Python and/or python is in the directories.
 
 ## echo
 
@@ -232,8 +240,6 @@ This command will display all of your previous commands **up to the history memo
 ```
 history
 ```
-
-This will return your previous commands.
 
 ## df
 
@@ -275,7 +281,7 @@ cat Basic.py
 
 ## man
 
-(manual) This command will give you a discription of any command that come after the command man. Example:
+(manual) This command will give you a description of any command that come after the command man. Example:
 
 ```
 man install
@@ -283,7 +289,7 @@ man install
 
 ## info
 
-(information) This command is a lot like man but the different is that info goes into more information about the command that follows info. Example:
+(information) This command is a lot like man but the different is that info goes into more information about the command. Example:
 
 ```
 info apt-get
