@@ -128,35 +128,35 @@ Returns:
 (copy) - After typing cp you type the file you want to copy + space + location you want to place the copied file.
 
 ```
-cp "JS Practice Folder" /home/User/Dev/JS
+cp "app.js" /home/User/Dev/JS
 ```
 
 ## mv
 
-(move) A lot like cp (copy) but instead of copying the file you will move it from one folder to another folder in the directory. Just like cp (copy) after typing mv + space + the file you want to move + location to move it too. Example below:
+(move) A lot like cp (copy) but instead of copying the file you will move it from one directory to another directory. Just like cp (copy) after typing mv + space + the file you want to move + location to move it too. Example below:
 
 ```
 mv pyproject.py /home/User/Dev/Python_Project
 ```
 
-- This will move the pyproject.py file in my current directory to the Python_Project directory.
+- This will move the pyproject.py file in my current directory to the Python_Project directory. You can also move directories using this command.
 
 ## rm
 
 (remove) This command will remove the specified file but not the directory.
 
 ```
-rm js_practice
+rm myApp.js
 ```
 
-Here are some other uses of using rm:
+Here are some other uses of the rm command:
 
 - **rmdir**
 
   (remove directory) - Removes an empty directory
 
   ```
-  rmdir /home/User/Dev/My_Empty_Folder
+  rmdir /home/User/Dev/My_Empty_Dir
   ```
 
 - **rm -r**
@@ -164,7 +164,7 @@ Here are some other uses of using rm:
   (remove recursively) - Removes a directory along with its content. This will remove a non-empty directory
 
   ```
-  rm -r /home/User/Dev/No_Longer_Needed_Practice_Folder
+  rm -r /home/User/Dev/No_Longer_Needed_Practice_File
   ```
 
 - **rm -f**
@@ -179,7 +179,7 @@ rm -rf <fileName>
 
 - **rm -i**
 
-Using this will make remove prompt you before every removal.
+Using this will make rm prompt you before every removal.
 
 ```
 rm -i <fileName>
@@ -202,7 +202,7 @@ mkdir Learn_Terminal_Basic
 ## locate
 
 Use this command to find files and their location by their name. If you are not sure if the file name is upper case or lower case use -i to ignore the case.
-If you wish to locate two or more words at a time you can seprate each word with (*). Example below:
+If you wish to locate two or more words at a time you can seprate each word with (\*). Example below:
 
 ```
 locate -i *hello*Practice
@@ -221,6 +221,7 @@ or you could do this:
 ```
 locate -ic Python
 ```
+
 This will ignore the case and return a count for how many times Python and/or python is in the directories.
 
 ## echo
@@ -231,7 +232,7 @@ This command helps us move data into text files. Example:
 echo I'm learning how to use the terminal in Ubuntu.>>basic_terminal.txt
 ```
 
-We did not have to use backslashs or wrap the sentence in "" because we used two >>(greater than) symbols before we put in the file to echo the sentence into.
+We did not have to use backslashs or wrap the sentence in "" because we used two >>(greater than) symbols before the file name.
 
 ## history
 
@@ -270,13 +271,13 @@ top
 Displays the contents of a file.
 
 ```
-cat /home/User/Dev/Practice_Python/Basic.py
+cat /home/User/Dev/Practice_Python/basic.py
 ```
 
 or to cat in your current directory
 
 ```
-cat Basic.py
+cat basic.py
 ```
 
 ## man
@@ -306,7 +307,7 @@ sudo install rename
 But the Ubuntu community recommands using mv command. Let's say I have a file in my Dev directory I want to rename.
 
 ```
-mv /home/jason/Dev/Terminal_Practice /home/jason/Dev/Basic_Terminal_Commands
+mv /home/jason/Dev/Basic_Terminal_Commands/basic_commands.md /home/jason/Dev/Basic_Terminal_Commands/ubuntu_terminal_commands.md
 ```
 
 Here is another way that was suggested but it is more complicated:
