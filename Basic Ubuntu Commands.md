@@ -289,6 +289,16 @@ user@my_computer_name:~/Dev/Bash$ mkdir Learn_Terminal_Basic
 If there is no error, means it worked
 ```
 
+## To Make File
+
+To make a file in your current directory do:
+
+```
+user@my_computer_name:~/Dev/Bash$ nano file_name_you_want
+```
+
+This will open up the nano program, built into Terminal, with the file_name_you_want. (More on nano is explained below)
+
 ## ctrl+c
 
 control + c Now that we are dealing with more argument commands we need to learn how to break out of them. If you are in a command argument and for some reason you want to break out of it. You would use ctrl+c
